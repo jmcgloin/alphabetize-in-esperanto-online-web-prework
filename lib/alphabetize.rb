@@ -8,8 +8,8 @@ def alphabetize(arr)
     # binding.pry
     for i in (0..[a.length, b.length].min - 1) do
       compare = ESPERANTO_ALPHABET.index(b[i]) <=> ESPERANTO_ALPHABET.index(a[i])
-      case compare
       binding.pry
+      case compare
       when -1
         -1
         break
