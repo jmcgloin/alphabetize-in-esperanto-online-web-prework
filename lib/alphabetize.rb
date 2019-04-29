@@ -20,4 +20,5 @@ def alphabetize(arr)
     end # for
   end # sort
   sorted_arr
+  binding.pry
 end # alphabetize
