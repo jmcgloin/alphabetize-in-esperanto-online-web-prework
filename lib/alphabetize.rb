@@ -16,5 +16,6 @@ def alphabetize(arr)
       else
         if i == [a.length, b.length].min - 1 then b.length <=> a.length ; break end
     end
+  end
   # binding.pry
 end
