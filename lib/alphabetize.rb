@@ -3,6 +3,9 @@ def alphabetize(arr)
   ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
   arr.sort do
     |a, b|
-    for (0..)
+    for i in (0..[a.length, b.length].min) do
+      case ESPERANTO_ALPHABET.index(a[i]) - ESPERANTO_ALPHABET.index(b[i])
+      when 
+    end
   # binding.pry
 end
