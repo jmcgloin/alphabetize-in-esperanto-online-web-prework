@@ -7,7 +7,8 @@ def alphabetize(arr)
     |a, b|
     # binding.pry
     for i in (0..[a.length, b.length].min - 1) do
-      case  ESPERANTO_ALPHABET.index(b[i]) <=> ESPERANTO_ALPHABET.index(a[i])
+      compare = ESPERANTO_ALPHABET.index(b[i]) <=> ESPERANTO_ALPHABET.index(a[i])
+      case compare
       when -1
         -1
         break
@@ -20,5 +21,4 @@ def alphabetize(arr)
     end # for
   end # sort
   sorted_arr
-  binding.pry
 end # alphabetize
