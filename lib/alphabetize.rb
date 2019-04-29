@@ -3,7 +3,7 @@ require 'pry'
 ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 
 def alphabetize(arr)
-  arr.sort do
+  sorted_arr = arr.sort do
     |a, b|
     binding.pry
     for i in (0..[a.length, b.length].min - 1) do
@@ -19,4 +19,5 @@ def alphabetize(arr)
       end # case
     end # for
   end # sort
+  sorted_arr
 end # alphabetize
