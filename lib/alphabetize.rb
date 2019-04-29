@@ -4,8 +4,7 @@ def alphabetize(arr)
   arr.sort do
     |a, b|
     for i in (0..[a.length, b.length].min) do
-      case ESPERANTO_ALPHABET.index(a[i]) - ESPERANTO_ALPHABET.index(b[i])
-      when 
+      
     end
   # binding.pry
 end
