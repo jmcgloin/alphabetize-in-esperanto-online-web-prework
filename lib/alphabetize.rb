@@ -1,11 +1,10 @@
 require 'pry'
 
-ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 
 def alphabetize(arr)
+  ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
   arr.sort do
     |a, b|
-  binding.pry
     for i in (0..[a.length, b.length].min - 1) do
       case  ESPERANTO_ALPHABET.index(b[i]) <=> ESPERANTO_ALPHABET.index(a[i])
       when -1
