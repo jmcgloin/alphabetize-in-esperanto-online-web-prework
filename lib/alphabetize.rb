@@ -15,6 +15,7 @@ def alphabetize(arr)
         break
       else
         if i == [a.length, b.length].min - 1 then b.length <=> a.length end
+      end # case
     end # for
   end # sort
 end # alphabetize
